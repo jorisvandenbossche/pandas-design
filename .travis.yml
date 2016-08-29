@@ -3,13 +3,10 @@ python:
   - 3.5
 
 sudo: false
+
 env:
   global:
-    secure: "<your secure key from doctr here>"
-
-    env:
-      global:
-        - secure: "NZpCwFvc/jJ/aBNItGX/YIUyxsh24UA8vv7MEDEPAPyZNE4WDefHGFAo6BglwulJFW603MWoDwS5Ko3nfXlIt+7qJnjNpdF/nIKYDPCQM1qc2A4GkBbMZBs9bcxUcLNzGBVZop+A592aS4Ob+bF5GUQbIvDpgJhXlDsuMNjNpVQHyWIZZIJ1Ilb1XyerT9rxnkc7HOF4dldQiRHaBgjiTsJNUNZ0GUdx0FB7To+d5qKz8miYhRljrCMhSyuVHk/E9jBpeYWN/bixrqZJcR0zJXiooWeDhn1DcxNeLR2TtbX7yabh/24UZnB+GbrtwG6MPVJXskoI6XfbAco17XY35NAP1i3AFEHKgCH9LtufA6g21zK/o+wT5k4oqf9HeSqJL1nBgYtoZzlloCva5dNsLUCgDH0dcGMzv25sRzXC15a5NyPVgcNN67mi6CTJ6S/MnFbWR/fi/tombx2BDuKsc7+xREQv9HxvIRUqQ6DdCUD1fdPEyZlxlr84VLjVJSjm84JyJUQR9/HM7Am/ogkrma2VqdwhFp4/Eqatm2vcqWoI3zaoOODTzgqOpIRQSCv2ERurdsT4fC2VnQ4pfMcAL70HPtfcJtVwLRnKRlTrbUmxuPQ9HauMJ0JtpJ4HtfLt/tKEQ+zN7NIGPChrZXnEZc1TtPCXuFVtSh8pLClV+hE="
+    - secure: "NZpCwFvc/jJ/aBNItGX/YIUyxsh24UA8vv7MEDEPAPyZNE4WDefHGFAo6BglwulJFW603MWoDwS5Ko3nfXlIt+7qJnjNpdF/nIKYDPCQM1qc2A4GkBbMZBs9bcxUcLNzGBVZop+A592aS4Ob+bF5GUQbIvDpgJhXlDsuMNjNpVQHyWIZZIJ1Ilb1XyerT9rxnkc7HOF4dldQiRHaBgjiTsJNUNZ0GUdx0FB7To+d5qKz8miYhRljrCMhSyuVHk/E9jBpeYWN/bixrqZJcR0zJXiooWeDhn1DcxNeLR2TtbX7yabh/24UZnB+GbrtwG6MPVJXskoI6XfbAco17XY35NAP1i3AFEHKgCH9LtufA6g21zK/o+wT5k4oqf9HeSqJL1nBgYtoZzlloCva5dNsLUCgDH0dcGMzv25sRzXC15a5NyPVgcNN67mi6CTJ6S/MnFbWR/fi/tombx2BDuKsc7+xREQv9HxvIRUqQ6DdCUD1fdPEyZlxlr84VLjVJSjm84JyJUQR9/HM7Am/ogkrma2VqdwhFp4/Eqatm2vcqWoI3zaoOODTzgqOpIRQSCv2ERurdsT4fC2VnQ4pfMcAL70HPtfcJtVwLRnKRlTrbUmxuPQ9HauMJ0JtpJ4HtfLt/tKEQ+zN7NIGPChrZXnEZc1TtPCXuFVtSh8pLClV+hE="
 
 script:
   - pip install sphinx doctr
