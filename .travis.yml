@@ -1,0 +1,17 @@
+language: python
+python:
+  - 3.5
+
+sudo: false
+env:
+  global:
+    secure: "<your secure key from doctr here>"
+
+    env:
+      global:
+        - secure: "YkOfKxqHdBqrkrG6Rx+4oetC8v/j7wkiRQMI/v1OH3lt/cTeBU2CEOOHn1ZmfKBfnRN+/NBriHXi0BrnulUumKJMOipm3vLKR6zs1GfQmkFTeXpkmAMm2onFarhV6z7zXaXVsLfRi0/hLNFEeiyS2UolioWSqPI0XCbLHyMD+HB6D9HP86MyvZLZqqeAWNKzDwpH4SlnNY448etWdnNz+i8Uk8jKRhlQQ3bRYz1LKN6Q+fkpOVK8JnmaP0WiFIk2rXF2QWW9dDdIlS2J3PM2bNqFqVffQUL0A1/EMNa3st+MZiOgULuBo6GlwCeIyqgD3dAVKuTcEDcgjabKIl7Yzx1i3EV9rFKXjQm9EWhjgm+BYgejfiN3AZjIxH42+C+b4IazHczXRTLpbsaivcUb73DJ7j59OaAXQvezNkf6WI5R2fe1OUVUBlqFxlDN0zsIhY+INa74SBxivMHeLmd3Oj58HeX0pivR9ysdQIaKuanJbsLTH0EIBmUFvxzHoHD8XpQ11pdhK8PKuSSf4Crn3UivN3rBxcZZKrjU3ffO/8qHgeMdmjGkT+91oVT0/m6mPj1kGTUT+uVndHrM4WLv+AOZuHh1IUAb077IE1EeC1kOhvCiIDA7qUJN4g8e1npCeFuiYrc1kxUu4irbGXS4TXw261TYfcTKOKbeRQTPSnU="
+
+script:
+  - pip install sphinx doctr
+  - make html
+  - doctr deploy
