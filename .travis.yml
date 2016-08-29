@@ -11,4 +11,4 @@ env:
 script:
   - pip install sphinx doctr ipython
   - make html
-  - doctr deploy
+  - doctr deploy --built-docs '_build/html'
